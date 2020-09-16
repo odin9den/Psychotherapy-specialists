@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  min-width: 320px;
+  font-size: 18px;
+  color: #282d26;
+  overflow-x: hidden;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.register-btn {
+  background-color: #282d26;
+  border-radius: 16px;
+  padding: 10px 30px;
+  width: 455px;
+  transition: all 0.3s;
+  border: 3px solid #282d26;
+  a {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &:hover {
+    background-color: #c1cb8f;
+    a {
+      color: #282d26;
+    }
+  }
+}
+.register-btn__right-section {
+  display: none;
+}
+.title {
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 60px;
+}
+.section {
+  padding-top: 55px;
+}
+.wrapper.shadow {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 45, 38, 0.75);
+    z-index: 4;
+  }
+}
