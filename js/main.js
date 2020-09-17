@@ -58,6 +58,6 @@ $(function () {
   $(".header__mobile-close, .header__link").on("click", function () {
     $(".menu").removeClass("active");
     $(".header__mobile-img").removeClass("hide");
-    $(".header__mobile-close.show").removeClass("show");
+    $(".header__mobile-close").removeClass("show");
   });
 });
