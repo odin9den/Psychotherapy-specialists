@@ -55,7 +55,7 @@ $(function () {
     $(".header__mobile-close").addClass("show");
   });
 
-  $(".header__mobile-close, .menu__list-item").on("click", function () {
+  $(".header__mobile-close, .header__link").on("click", function () {
     $(".menu").removeClass("active");
     $(".header__mobile-img").removeClass("hide");
     $(this).removeClass("show");
